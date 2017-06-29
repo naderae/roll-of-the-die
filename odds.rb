@@ -13,6 +13,10 @@ sum_frequency = {}
 end
 end
 
-
-
 puts sum_frequency
+
+sum_frequency.each do |dice_sum, frequency|
+odds = (frequency.to_f / 36) * 100
+puts "the odds of #{dice_sum} coming up are #{odds.round} % "
+
+end
