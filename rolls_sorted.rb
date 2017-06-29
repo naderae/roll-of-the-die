@@ -2,8 +2,9 @@
 sorted_rolls = []
 
 10.times do
-  roll_result = 1 + Random.rand(6)
-  sorted_rolls.push("The result of your roll is #{roll_result}")
-  sorted_rolls.sort!
+  sorted_rolls.push(1 + Random.rand(6))
 end
-  puts sorted_rolls
+  sorted_rolls.sort!
+  sorted_rolls.each do |num|
+    puts "The result of your roll is #{num}")
+  end
